@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Arizona Sponsorship Prospectus</title>
+    <meta
+      name="description"
+      content="Official sponsorship prospectus for Code Arizona, Arizona's premier high school hackathon."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect width="64" height="64" fill="%23f6542d"/%3E%3C/svg%3E'
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --accent: #f6542d;
+        --ink: #0b0b0b;
+        --paper: #ffffff;
+        --muted: #b9bcc0;
+        --line: #242424;
+        --panel: #111111;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: var(--ink);
+        color: var(--paper);
+        font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        letter-spacing: -0.02em;
+        line-height: 1.5;
+      }
+
+      .wrap {
+        width: min(1100px, 94vw);
+        margin: 0 auto;
+      }
+
+      .mono {
+        font-family: "Space Mono", "Space Grotesk", monospace;
+      }
+
+      .cover {
+        min-height: 86vh;
+        display: grid;
+        align-items: end;
+        padding: 3rem 0;
+        background:
+          linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.82)),
+          url("https://user-cdn.hackclub-assets.com/019d8427-7d99-743b-9987-1778452b1eb2/DSC05970.jpg")
+            center / cover no-repeat;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .kicker {
+        margin: 0;
+        color: #ffe2d9;
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      h1 {
+        margin: 0.4rem 0 0;
+        font-size: clamp(2rem, 6vw, 5rem);
+        line-height: 1.05;
+      }
+
+      .accent {
+        color: var(--accent);
+      }
+
+      .cover-meta {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+      }
+
+      .pill {
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        border-radius: 999px;
+        padding: 0.35rem 0.75rem;
+        font-size: 0.9rem;
+        color: #efefef;
+        background: rgba(0, 0, 0, 0.35);
+      }
+
+      .section {
+        padding: 3.5rem 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h2 {
+        margin: 0 0 0.75rem;
+        font-size: clamp(1.5rem, 3vw, 2.4rem);
+      }
+
+      .lead {
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(1rem, 1.9vw, 1.2rem);
+        max-width: 900px;
+      }
+
+      .stats {
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.8rem;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 1rem;
+      }
+
+      .card h3 {
+        margin: 0;
+        font-size: 1.8rem;
+      }
+
+      .card p {
+        margin: 0.35rem 0 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .tiers {
+        margin-top: 1.5rem;
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 820px;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 0.85rem 0.9rem;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: #151515;
+        font-size: 0.95rem;
+      }
+
+      td:first-child,
+      th:first-child {
+        width: 32%;
+        font-weight: 600;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .check {
+        color: #7ddf96;
+        font-weight: 700;
+      }
+
+      .x {
+        color: #9c9c9c;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 1rem;
+      }
+
+      .list {
+        margin: 1rem 0 0;
+        padding-left: 1.1rem;
+      }
+
+      .list li {
+        margin: 0.45rem 0;
+        color: var(--muted);
+      }
+
+      .cta-box {
+        background: #171717;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 1.2rem;
+      }
+
+      .cta-box p {
+        margin: 0.45rem 0;
+        color: var(--muted);
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 0.75rem;
+        text-decoration: none;
+        font-weight: 700;
+        color: #0c0c0c;
+        background: var(--accent);
+        border: 2px solid var(--accent);
+        border-radius: 8px;
+        padding: 0.6rem 0.95rem;
+      }
+
+      footer {
+        padding: 1.3rem 0 2.2rem;
+        background: #090909;
+      }
+
+      footer p {
+        margin: 0.35rem 0;
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      @media (max-width: 920px) {
+        .stats {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .split {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .stats {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="cover">
+      <div class="wrap">
+        <p class="kicker mono">Code Arizona 2026</p>
+        <h1>
+          Sponsorship <span class="accent">Prospectus</span><br />
+        </h1>
+        <div class="cover-meta">
+          <span class="pill">August 2026</span>
+          <span class="pill">10-hour in-person event</span>
+          <span class="pill">Beginner-friendly</span>
+          <span class="pill">High school student builders</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="wrap">
+          <h2>Why sponsor Code Arizona?</h2>
+          <p class="lead">
+            Code Arizona brings together ambitious high school developers across Arizona for a
+            full day of building, mentorship, and innovation. Sponsors support access to STEM
+            opportunities while getting meaningful brand exposure among students, educators, and
+            local tech communities.
+          </p>
+          <div class="stats">
+            <article class="card">
+              <h3>100+</h3>
+              <p>Expected student participants</p>
+            </article>
+            <article class="card">
+              <h3>10 hrs</h3>
+              <p>Of hacking, workshops, and demos</p>
+            </article>
+            <article class="card">
+              <h3>10+</h3>
+              <p>Expected schools represented</p>
+            </article>
+            <article class="card">
+              <h3>100%</h3>
+              <p>Free entry for all participants</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <h2>Sponsorship tiers</h2>
+          <p class="lead">
+            We can tailor any package to your goals. In-kind support and custom activations are
+            welcome.
+          </p>
+          <div class="tiers">
+            <table>
+              <thead>
+                <tr>
+                  <th>Benefit</th>
+                  <th>Bronze<br />$500</th>
+                  <th>Silver<br />$1,000</th>
+                  <th>Gold<br />$2,000</th>
+                  <th>Platinum<br />$3,000</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Send company swag</td>
+                  <td class="check">✅</td>
+                  <td class="check">✅</td>
+                  <td class="check">✅</td>
+                  <td class="check">✅</td>
+                </tr>
+                <tr>
+                  <td>Logo on website</td>
+                  <td class="check">✅</td>
+                  <td class="check">✅</td>
+                  <td class="check">✅</td>
+                  <td class="check">✅</td>
+                </tr>
+                <tr>
+                  <td>Post-event email</td>
+                  <td class="x">-</td>
+                  <td class="check">✅</td>
+                  <td class="check">✅</td>
+                  <td class="check">✅</td>
+                </tr>
+                                <tr>
+                  <td>Sponsor table</td>
+                  <td class="x">-</td>
+                  <td class="check">✅</td>
+                  <td class="check">✅</td>
+                  <td class="check">✅</td>
+                </tr>
+                <tr>
+                  <td>Opening Ceremony Keynote</td>
+                  <td class="x">-</td>
+                  <td class="x">-</td>
+                  <td>2 min</td>
+                  <td>4 min</td>
+                </tr>
+                <tr>
+                  <td>Lunch Keynote</td>
+                  <td class="x">-</td>
+                  <td class="x">-</td>
+                  <td class="x">-</td>
+                  <td>15 min</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap split">
+          <div>
+            <h2>How support is used</h2>
+            <p class="lead">
+              Sponsorships directly fund a high-quality student experience and keep participation
+              free.
+            </p>
+            <ul class="list">
+              <li>Meals and all-day snacks for participants and volunteers</li>
+              <li>Prizes for participants</li>
+              <li>Workshop resources and beginner education support</li>
+            </ul>
+          </div>
+          <aside class="cta-box">
+            <h2>Ready to partner?</h2>
+            <p><strong>Primary contact:</strong> Aaradhya Panda</p>
+            <p><strong>Email:</strong> <a href="mailto:adi@codehatch.org">adi@codehatch.org</a></p>
+            <p>
+              Tell us your goals and budget, and we will build a custom sponsorship package that
+              fits your impact and recruiting priorities.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <h2>Tax-deductible sponsorship</h2>
+          <p class="lead">
+            All donations to Code Arizona are <strong>100% tax-deductible</strong> due to our
+            fiscal sponsorship with <strong>The Hack Foundation</strong> (EIN: 81-2908499).
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p class="mono">CODE ARIZONA</p>
+        <p>Fiscally sponsored by The Hack Foundation (EIN: 81-2908499)</p>
+      </div>
+    </footer>
+  </body>
+</html>
