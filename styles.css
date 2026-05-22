@@ -102,11 +102,117 @@ body {
   padding: 9.5rem 1.2rem 3rem;
 }
 
-.hero h1 {
+.hero-content {
   width: min(92vw, 1120px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.hero h1 {
   margin: 0;
   font-size: clamp(2rem, 6.9vw, 5.6rem);
   line-height: 1.08;
+}
+
+.countdown-section {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1.2rem;
+}
+
+.countdown {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: var(--paper);
+}
+
+.cd-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.5rem;
+  min-width: 80px;
+}
+
+.cd-colon {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--paper);
+  transform: translateY(-0.2rem);
+}
+
+.cd-box span {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--paper);
+}
+
+.cd-box p {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--muted);
+}
+
+.word-carousel {
+  background: var(--accent);
+  color: var(--ink);
+  overflow: hidden;
+  padding: 0.6rem 0 1rem;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: flex-start;
+  animation: marquee 30s linear infinite;
+}
+
+.carousel-group {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+  padding: 0 0.2rem;
+  gap: 0.4rem;
+}
+
+.sep {
+  width: 8px;
+  height: 8px;
+  background: var(--ink);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0.4rem;
+  flex: 0 0 auto;
+  vertical-align: middle;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .sponsor-logos {
@@ -208,6 +314,11 @@ body {
 .detail strong {
   font-size: 1.4rem;
   line-height: 1.15;
+}
+
+.venue-link {
+  color: var(--ink);
+  text-decoration: underline;
 }
 
 .cta {
