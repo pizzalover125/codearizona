@@ -1,6 +1,6 @@
 (() => {
   // Countdown logic - explicitly configured for 9:00 AM MST (Arizona Time, UTC-7)
-  const targetDate = new Date("2026-08-08T09:00:00-07:00").getTime();
+  const targetDate = new Date("2026-08-15T09:00:00-07:00").getTime();
   const daysEl = document.getElementById("cd-days");
   const hoursEl = document.getElementById("cd-hours");
   const minsEl = document.getElementById("cd-mins");
